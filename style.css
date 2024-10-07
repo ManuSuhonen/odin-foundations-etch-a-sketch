@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px solid limegreen !important;
+    /* background: rgba(50, 77, 152, 0.1) !important; */
+}
+
+body {
+    background-color: rgb(75, 75, 75);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 228, 196);
+}
+
+#ui-container {
+    display: flex;
+    flex-direction: column;
+
+    #user-interactions {
+        padding: 10px;
+        align-self: center;
+
+        input {
+            font-size: 20px;  
+        }
+        button {
+            font-size: 20px;
+        }
+    }
+
+    #grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        /* width: 90%; */
+        /* min-width: 800px; */
+        align-content: start;
+        padding: 10px;
+
+
+        .cell {
+            background-color: bisque;
+            width: calc(100% / 16);
+            border: 1px;
+            border-style: solid;
+            aspect-ratio: 1;
+        }
+    }
+}
